@@ -1,0 +1,28 @@
+# Enable RewriteEngine
+RewriteEngine On
+
+# Handle routing for all URLs to index.html for client-side routing (SPA)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]
+
+# Redirect to HTTPS if not using secure protocol (optional)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Cache control for assets
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|js|css|woff|woff2|ttf|otf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+# Force file downloads for specific file types (optional)
+<FilesMatch "\.(pdf|zip|tar|gz|rar)$">
+    Header set Content-Disposition "attachment"
+</FilesMatch>
+
+# Custom Error Pages (optional)
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Set UTF-8 encoding for all files (optional)
+AddDefaultCharset UTF-8
