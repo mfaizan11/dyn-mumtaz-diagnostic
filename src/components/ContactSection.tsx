@@ -179,10 +179,10 @@ export default function ContactSection() {
                         Email Address
                       </h3>
                       <a
-                        href="mailto:info@Mumtazdiagnostics.com"
+                        href="mailto:info@mdcdikhan.com"
                         className="text-gray-600 hover:text-[#007ec3] transition-colors break-all"
                       >
-                        info@Mumtazdiagnostics.com
+                        info@mdcdikhan.com
                       </a>
                     </div>
                   </div>
