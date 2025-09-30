@@ -476,7 +476,7 @@ export default function Services() {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button className="border border-[#007ec3] text-[#007ec3] hover:bg-[#007ec3] hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                <Button className="border border-[#007ec3] text-white hover:bg-[#007ec3] hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300">
                   Contact Us
                 </Button>
               </Link>
