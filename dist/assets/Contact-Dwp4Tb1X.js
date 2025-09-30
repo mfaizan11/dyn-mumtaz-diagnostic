@@ -1,0 +1,1 @@
+import{j as t}from"./index-Dzw9-4CN.js";import{C as o}from"./ContactSection-meksj9be.js";import"./card-EOMI7p7v.js";import"./calendar-T5HZJmT1.js";import"./clock-ChClMLBB.js";import"./star-CEPnMoAZ.js";function a(){return t.jsx("div",{children:t.jsx(o,{})})}export{a as default};
