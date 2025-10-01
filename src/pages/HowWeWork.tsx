@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 import {
   Calendar,
   UserCheck,
@@ -157,6 +158,45 @@ export default function HowWeWork() {
 
   return (
     <div>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>How We Work | Mumtaz Diagnostic Centre</title>
+        <meta
+          name="description"
+          content="Learn about the patient-centered approach and process at Mumtaz Diagnostic Centre. Discover how our expert team ensures accuracy, reliability, and compassionate care."
+        />
+        <meta
+          name="keywords"
+          content="How We Work, Mumtaz Diagnostic Centre, diagnostic process, patient care, healthcare approach, Dera Ismail Khan"
+        />
+        <meta
+          property="og:title"
+          content="How We Work | Mumtaz Diagnostic Centre"
+        />
+        <meta
+          property="og:description"
+          content="Discover how Mumtaz Diagnostic Centre's patient-focused process ensures accurate diagnostic results and excellent care. Learn more about our approach to healthcare."
+        />
+        <meta
+          property="og:image"
+          content="https://mdcdikhan.com/favicon.png" // Use a relevant image URL
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="How We Work | Mumtaz Diagnostic Centre"
+        />
+        <meta
+          name="twitter:description"
+          content="At Mumtaz Diagnostic Centre, we ensure accurate diagnostic results and compassionate care. Learn about our approach to healthcare and how we serve our community."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mdcdikhan.com/favicon.png" // Use a relevant image URL
+        />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#007ec3] via-[#005a8c] to-[#004070] py-20 relative overflow-hidden -mt-1">
         <div

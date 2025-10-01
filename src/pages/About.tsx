@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import {
@@ -82,6 +83,44 @@ export default function About() {
 
   return (
     <div>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>About Mumtaz Diagnostic Centre | Trusted Healthcare</title>
+        <meta
+          name="description"
+          content="Learn about Mumtaz Diagnostic Centre, a trusted healthcare provider in Dera Ismail Khan offering advanced medical technology, 24/7 services, and patient-centered care."
+        />
+        <meta
+          name="keywords"
+          content="healthcare, diagnostic centre, Dera Ismail Khan, medical services, patient care, advanced diagnostics"
+        />
+        <meta
+          property="og:title"
+          content="About Mumtaz Diagnostic Centre | Trusted Healthcare"
+        />
+        <meta
+          property="og:description"
+          content="Mumtaz Diagnostic Centre provides trusted healthcare services in Dera Ismail Khan, including advanced diagnostics, 24/7 services, and compassionate patient care."
+        />
+        <meta
+          property="og:image"
+          content="https://mdcdikhan.com/favicon.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Mumtaz Diagnostic Centre | Trusted Healthcare"
+        />
+        <meta
+          name="twitter:description"
+          content="Mumtaz Diagnostic Centre provides trusted healthcare services in Dera Ismail Khan, offering advanced diagnostics and compassionate care."
+        />
+        <meta
+          name="twitter:image"
+          content="https://mdcdikhan.com/favicon.png"
+        />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#007ec3] via-[#005a8c] to-[#004070] py-20 relative overflow-hidden -mt-1">
         <div

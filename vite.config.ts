@@ -2,9 +2,23 @@
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
+  import sitemap from "vite-plugin-sitemap";
+
 
   export default defineConfig({
-    plugins: [react()],
+    plugins: [react(), sitemap({
+      hostname: "https://mdcdikhan.com",
+      dynamicRoutes: [
+        "/",      
+        "/about",
+        "/services",
+        "/how-we-work",
+        "/contact",
+        
+      ],
+      changefreq: "weekly",
+      priority: 0.7,
+    })],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {

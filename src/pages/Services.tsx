@@ -20,6 +20,7 @@ import {
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
+import { Helmet } from 'react-helmet-async';
 
 export default function Services() {
   const services = [
@@ -192,6 +193,46 @@ export default function Services() {
 
   return (
     <div>
+       <Helmet>
+              <title>Services | Mumtaz Diagnostic Centre</title>
+              <meta
+                name="description"
+                content="Get in touch with Mumtaz Diagnostic Centre for all your healthcare needs. Our team is ready to assist with inquiries, appointments, and more."
+              />
+              <meta
+                name="keywords"
+                content="Services, Mumtaz Diagnostic Centre, healthcare inquiries, appointment, Dera Ismail Khan"
+              />
+              <meta
+                property="og:title"
+                content="Services | Mumtaz Diagnostic Centre"
+              />
+              <meta
+                property="og:description"
+                content="Explore the comprehensive healthcare services offered by Mumtaz Diagnostic Centre. From advanced diagnostic tests to 24/7 emergency care, our expert team is dedicated to your health and well-being."
+              />
+              <meta
+                property="og:image"
+                content="https://mdcdikhan.com/favicon.png"
+              />
+              <meta property="og:type" content="website" />
+              <meta
+                name="twitter:card"
+                content="summary_large_image"
+              />
+              <meta
+                name="twitter:title"
+                content="Contact Us | Mumtaz Diagnostic Centre"
+              />
+              <meta
+                name="twitter:description"
+                content="Explore the comprehensive healthcare services offered by Mumtaz Diagnostic Centre. From advanced diagnostic tests to 24/7 emergency care, our expert team is dedicated to your health and well-being."
+              />
+              <meta
+                name="twitter:image"
+                content="https://mdcdikhan.com/favicon.png" // Use a relevant image URL
+              />
+            </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#007ec3] via-[#005a8c] to-[#004070] py-20 relative overflow-hidden -mt-1">
         <div
